@@ -4,17 +4,17 @@ class Cliente1096:
     id = 0
     Nombre = ""
     Membresia = ""
-    Edad = 0
+    Fecha_nac = 0
     Telefono = 0
     Correo = ""
     Curp = ""
     ## Funcion para mostrar datos
-    def MostrarDatos(self, id, Nombre, Membresia, Edad, Telefono, Correo, Curp):
+    def MostrarDatos(self, id, Nombre, Membresia, Fecha_nac, Telefono, Correo, Curp):
         print("Resultados para clientes")
         print(f"Id del Cliente {id}")
         print(f"Nombre del Cliente {Nombre}")
         print(f"Membresia del Cliente {Membresia}")
-        print(f"Edad del Cliente {Edad}")
+        print(f"Fecha nac del Cliente {Edad}")
         print(f"Telefono del Cliente {Telefono}")
         print(f"Correo del Cliente {Correo}")
         print(f"Curp del Cliente {Curp}")
@@ -52,13 +52,13 @@ Objeto2=Cliente1096()
 Objeto.id=1
 Objeto.Nombre="Cristian"
 Objeto.Membresia="VIP"
-Objeto.Edad=17
+Objeto.Fecha_nac=17
 Objeto.Telefono=6563194064
 Objeto.Correo="a.22308051281096@cbtis128.edu.mx"
 Objeto.Curp="UYWL240820HOCTJZ41"
 print("---------------------------------")
 ## Uso de las funciones con el objeto
-Objeto.MostrarDatos(Objeto.id,Objeto.Nombre,Objeto.Membresia,Objeto.Edad,
+Objeto.MostrarDatos(Objeto.id,Objeto.Nombre,Objeto.Membresia,Objeto.Fecha_nac,
                     Objeto.Telefono,Objeto.Correo,Objeto.Curp)
 print("---------------------------------")
 
