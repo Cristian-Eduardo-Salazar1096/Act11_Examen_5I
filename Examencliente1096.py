@@ -33,11 +33,11 @@ class Cliente1096:
     ## Funcion para mostrar Diccionario Cliente
     def Dicc_Clientes(self):
         print("Dicc Cliente")
-        DiccCli = {"Adriel" : "Si",
-                    "Rodolfo" : "No",
-                    "Antonio" : "Si" , 
-                    "Uziel" : "Si",
-                    "Alberto" : "No"}
+        DiccCli = {"Romo" : "VIP",
+                    "Emilio" : "MVP",
+                    "Edwin" : "SENIOR" , 
+                    "Miriam" : "PRO",
+                    "Edgar" : "GUEST"}
         for x,y in DiccCli.items():
             print(x,y)
     ## Funcion para mostrar Funcion altas
