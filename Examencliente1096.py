@@ -31,8 +31,8 @@ class Cliente1096:
         for x in TuplaCliente:
             print(x)
     ## Funcion para mostrar Diccionario Cliente
-    def Dicc_Clientes(self):
-        print("Dicc Cliente")
+    def Diccionario_MembresiaDeCliente(self):
+        print("Diccionario de MembresiaDeCliente")
         DiccCli = {"Romo" : "VIP",
                     "Emilio" : "MVP",
                     "Edwin" : "SENIOR" , 
@@ -66,7 +66,7 @@ Objeto2.listar_Cliente()
 print("---------------------------------")
 Objeto2.Tupla_Clientes()
 print("---------------------------------")
-Objeto2.Dicc_Clientes()
+Objeto2.Diccionario_MembresiaDeCliente()
 print("---------------------------------")
 Objeto2.Altas()
 print("---------------------------------")
