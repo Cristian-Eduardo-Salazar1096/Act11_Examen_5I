@@ -1,72 +1,70 @@
 # Examen Nava 22308051281096
-class Cliente1096:
+class Provedor1096:
     ## Atributos
     id = 0
     Nombre = ""
-    Membresia = ""
-    Fecha_nac = 0
-    Telefono = 0
-    Correo = ""
-    Curp = ""
-    ## Funcion para mostrar datos
-    def MostrarDatos(self, id, Nombre, Membresia, Fecha_nac, Telefono, Correo, Curp):
-        print("Resultados para clientes")
-        print(f"Id del Cliente {id}")
-        print(f"Nombre del Cliente {Nombre}")
-        print(f"Membresia del Cliente {Membresia}")
-        print(f"Fecha nac del Cliente {Edad}")
-        print(f"Telefono del Cliente {Telefono}")
-        print(f"Correo del Cliente {Correo}")
-        print(f"Curp del Cliente {Curp}")
-    ## Funcion para mostrar la lista cliente
-    def listar_Cliente(self):
-        print("Lista Cliente")
-        ListaCliente = ["Cristian","Kevin","Karen","Roberto","Casandra"]
-        for x in ListaCliente:
+    Producto = ""
+    Sucursal = ""
+    Horario = ""
+    Producto_Cant = 0
+    Direccion = ""
+    ## Funcion para mostrar datos de Provedor
+    def MostrarDatos(self, id, Nombre, Producto, Sucursal, Horario, Producto_Cant, Direccion):
+        print("Resultados para Provedores")
+        print(f"Id del Provedor {id}")
+        print(f"Nombre del Provedor {Nombre}")
+        print(f"Producto del Provedor {Producto}")
+        print(f"Sucursal del Provedor {Sucursal}")
+        print(f"Horario del Provedor {Horario}")
+        print(f"Cantidad de Producto del Provedor {Producto_Cant}")
+        print(f"Direccion del Provedor {Direccion}")
+    ## Funcion para mostrar la lista Provedor
+    def listar_provedor(self):
+        print("Lista Provedores")
+        Listaprovedor = ["Nestle","Dell","Chips","Coca-Cola","Intel"]
+        for x in Listaprovedor:
             print(x)
-    ## Funcion para mostrar Tupla cliente
-    def Tupla_Clientes(self):
-        print("Tupla Cliente")
-        TuplaCliente = ("Rosio","Alfredo","Javier","Juan","Carlos")
-        for x in TuplaCliente:
+    ## Funcion para mostrar Tupla Provedor
+    def Tupla_provedor(self):
+        print("Tupla Provedores")
+        TuplaProvedores = ("Pepsi","Faber Castle","La Michoacana","Oxxo","Del Rio")
+        for x in TuplaProvedores:
             print(x)
-    ## Funcion para mostrar Diccionario Cliente
-    def Diccionario_MembresiaDeCliente(self):
-        print("Diccionario de MembresiaDeCliente")
-        DiccCli = {"Romo" : "VIP",
-                    "Emilio" : "MVP",
-                    "Edwin" : "SENIOR" , 
-                    "Miriam" : "PRO",
-                    "Edgar" : "GUEST"}
-        for x,y in DiccCli.items():
+    ## Funcion para mostrar Diccionario Provedor
+    def Diccionario_Rango_Provedores(self):
+        print("Diccionario_Rango_Provedores")
+        Diccionario_Rango_Provedores = {"Rosas -" : "bajo",
+                    "Carbajal -" : "alto",
+                    "Cerna -" : "bajo" , 
+                    "Batres -" : "bajo",
+                    "Romero -" : "medio"}
+        for x,y in Diccionario_Rango_Provedores.items():
             print(x,y)
     ## Funcion para mostrar Funcion altas
     def Altas(self):
-        print("Operacion realizada para la clase cliente con exito")
+        print("Operacion realizada para la clase Provedor con exito")
     ## Funcion para mostrar Funcion Bajas
     def bajas(self):
         print("Datos borrados con exito")
 ## Uso de los objetos
-Objeto=Cliente1096()
-Objeto2=Cliente1096()
+Objeto=Provedor1096()
+Objeto2=Provedor1096()
 Objeto.id=1
-Objeto.Nombre="Cristian"
-Objeto.Membresia="VIP"
-Objeto.Fecha_nac=17
-Objeto.Telefono=6563194064
-Objeto.Correo="a.22308051281096@cbtis128.edu.mx"
-Objeto.Curp="UYWL240820HOCTJZ41"
+Objeto.Nombre="Chips"
+Objeto.Producto="Papas Fritas"
+Objeto.Sucursal="San Villas"
+Objeto.Horario="10am a 10pm"
+Objeto.Producto_Cant=724
+Objeto.Direccion="Calle san antonio 1945"
 print("---------------------------------")
 ## Uso de las funciones con el objeto
-Objeto.MostrarDatos(Objeto.id,Objeto.Nombre,Objeto.Membresia,Objeto.Fecha_nac,
-                    Objeto.Telefono,Objeto.Correo,Objeto.Curp)
+Objeto.MostrarDatos(Objeto.id,Objeto.Nombre,Objeto.Producto,Objeto.Sucursal,Objeto.Horario,Objeto.Producto_Cant,Objeto.Direccion)
 print("---------------------------------")
-
-Objeto2.listar_Cliente()
+Objeto2.listar_provedor()
 print("---------------------------------")
-Objeto2.Tupla_Clientes()
+Objeto2.Tupla_provedor()
 print("---------------------------------")
-Objeto2.Diccionario_MembresiaDeCliente()
+Objeto2.Diccionario_Rango_Provedores()
 print("---------------------------------")
 Objeto2.Altas()
 print("---------------------------------")
